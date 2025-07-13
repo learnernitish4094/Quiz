@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Practice - 2nd Quiz (HTML) </title>
+</head>
+
+<body>
+    <img src="fitbit.png" height="100" alt="logo">
+    <h1>2nd Quiz - Create a website which shows videos of diffrent category and audio of diffrent categories.You can use
+        Youtube video in an iframe using youtube embedding feature </h1>
+    <p><b>Tagline - </b>I'll use all tags and attributes in this quiz those I learned till now from<a
+            href="https://www.youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w" target="_blank">Sigma Web
+            Development - Course</a></p>
+    <br>
+    <hr>
+    <h2>Navigation</h2>
+    <ul>
+        <li><a href="#videos" target="_blank">Videos</a></li>
+        <li><a href="#Audios" target="_blank">Audios</a></li>
+        <li><a href="#Form" target="_blank">Feedback form</a></li>
+    </ul>
+    <br>
+    <hr>
+    <h2 id="videos">Videos</h2>
+    <p>Watch some videos from diffrent categories</p>
+    <table border="1">
+        <caption><b>Video Details</b></caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="#introofhtml" target="_blank">Intro to HTML</a></td>
+                <td>Education</td>
+                <td>31:20 mins</td>
+            </tr>
+            <tr>
+                <td><a href="#gameplay" target="_blank">Gameplay</a></td>
+                <td>Game</td>
+                <td>25:03 mins</td>
+            </tr>
+            <tr>
+                <td><a href="#moviereview" target="_blank">Movie Review</a></td>
+                <td>Entertainment</td>
+                <td>18 mins</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td style="text-align: center;" colspan="3">End of list</td>
+            </tr>
+        </tfoot>
+    </table>
+    <div>
+        <iframe id="introofhtml" width="360" height="215"
+            src="https://www.youtube.com/embed/BGeDBfCIqas?si=JsWEAP5CcxkawgiN" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div>
+        <video id="gameplay" src="dopamine realese.mp4" width="360" height="215" controls></video>
+    </div>
+    <div>
+        <video id="moviereview" src="4k Fog overlay.mp4" width="360" height="215" controls></video>
+    </div>
+    <br>
+    <hr>
+
+    <h2 id="Audios">Audio</h2>
+    <table border="1">
+        <caption><b>Audio Details</b></caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="#digitalcounting" target="_blank">Digital Counting Effect</a></td>
+                <td>Comedy</td>
+                <td>1 min</td>
+            </tr>
+            <tr>
+                <td><a href="#risersfx" target="_blank">Riser SFX effect</a></td>
+                <td>Comedy</td>
+                <td>1 min</td>
+            </tr>
+            <tr>
+                <td><a href="#soundofcoin" target="_blank">Sound Of coin Effect</a></td>
+                <td>Comedy</td>
+                <td>1 min</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td style="text-align: center;" colspan="3">End of list</td>
+            </tr>
+        </tfoot>
+    </table>
+    <div>
+        <audio id="digitalcounting" src="Digital counting.mp3" controls></audio>
+    </div>
+    <div>
+        <audio id="risersfx" src="Riser SFX.mp3" controls></audio>
+    </div>
+    <div>
+        <audio id="soundofcoin" src="Sound of coin.mp3" controls></audio>
+    </div>
+    <br>
+    <hr>
+
+    <h2 id="Form">Feedback Form</h2>
+
+    <form action="#" method="post">
+
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Name" placeholder="Enter Your Name" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="Age">Age:</label>
+            <input type="number" id="Age" name="Age" placeholder="Enter Your Age" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="Address">Address:</label>
+            <input type="text" id="Address" name="Address" placeholder="Enter Your Current Address">
+        </div>
+        <br>
+
+        <div>
+            <label for="Email">E-mail:</label>
+            <input type="text" id="Email" name="Email" placeholder="Enter Your Email" required>
+        </div>
+        <br>
+
+        <p><b>What do you like most:</b></p>
+
+        <label for="video">Videos</label>
+        <input type="radio" id="video" name="intrest" value="video">
+
+        <label for="audio">Audios</label>
+        <input type="radio" id="audio" name="intrest" value="audio">
+
+        <div>
+            <label for="genre">Favorite Genre</label>
+            <select name="Genre" id="genre">
+                <option value="games">Games</option>
+                <option value="movies">Movies</option>
+                <option value="sports">Sports</option>
+                <option value="music">Music</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="comment">Type Your Comment</label><br>
+            <textarea id="comment" name="comment" rows="5" cols="50" placeholder="Give your valueable feedback here"
+                style="text-align: center;"></textarea>
+        </div>
+
+        <div>
+            <input type="checkbox" id="term">
+            <label for="term">I accept terms and conditions</label>
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <footer>
+        <p>Created by <a href="https://www.instagram.com/nitish_kumar571/" target="_blank">Nitish Kumar</a></p>
+        <p>&copy; 2025 Nitish 2nd Quiz</p>
+    </footer>
+</body>
+
+</html>
